@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.check{
+  background-color:beige;
+}
+.HeaderBar{
+  color:black;
+  font: bold;
+  
+}
+.second{
+  background-color: black;
+}
+.h1{
+  margin:0;
+}
+.head{
+  background-color: darkcyan;
+  color: white;
+  padding: 2px;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px;
+
+}
+.movie{
+  background-color:rgba(128, 212, 212, 0.484);
+  text-align: start;
+  font-weight: bold;
+  padding: 7px;
+  border: 1px solid rgba(4, 81, 81, 0.521);
+  width: 22%;
+   margin-top: 15px;
+
+
+}
+.movie img{
+  height: 250px;
+  width: 100%;
+}

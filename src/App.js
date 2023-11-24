@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeaderBar from "./ProjectComponents/HeaderBar";
+import Movie from "./ProjectComponents/Movie";
+import movies from "./ProjectComponents/Data.json";
 
 function App() {
+
+  let jhanda = false;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderBar />
+      <div className="main">
+        {movies.map((element, index) => {
+          return (
+            <Movie
+              key={index}
+              Title={element.Title}
+              Year={element.Year}
+              Image={element.Poster}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
